@@ -1,18 +1,21 @@
-const audio=document.getElementById("audio");
-const button=document.getElementById("button");
+const AUDIO=document.getElementById("audio");
+const BUTTON=document.getElementById("button");
 var check=0;
-function play_pause()
+ function play_pause()
 {
     if(!check)
         {
             check=1;
-            audio.play();
-            button.style.animation="spin 5s linear infinite";
+            AUDIO.play();
+            BUTTON.style.animation="spin 5s linear infinite";
         }
         else {
             check=0;
-            audio.pause();
-            button.style.animation="";
-
+            AUDIO.pause();
+            BUTTON.style.animation="";
         }
+}
+function change_mode()
+{  
+    document.body.classList.toggle("dark_mode");
 }
