@@ -3,23 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <title>GOOFY_LOFI</title>
-    <link rel="icon" href="icon.jpg" />
+    <link rel="icon" href="./assests/icon.jpg" />
     <link rel="stylesheet" href="css.css" />
     <script
       src="https://kit.fontawesome.com/c0c9bfe5b2.js"
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
     <button id="mode" onclick="change_mode()">DARK MODE</button>
-    <div id="wrapper">
-      <audio src="songs/lofi.MP3" id="audio" loop></audio>
-      <img src="Lofi_girl_logo.jpg" id="button" onclick="play_pause()" />
-      <div id="bar">
-        <i class="fa-solid fa-backward fa-3x" id="next"></i>
-        <i class="fa-solid fa-forward fa-3x" id="back"></i>
-      </div>
+    <audio src="songs/1.MP3" id="audio" loop></audio>
+    <div id="bar">
+      <i class="fa-solid fa-backward fa-3x" id="next" onclick="prev()"></i>
+      <img
+        src="./assests/Lofi_girl_logo.jpg"
+        id="button"
+        onclick="play_pause()"
+      />
+      <i class="fa-solid fa-forward fa-3x" id="back" onclick="next()"></i>
     </div>
 
     <script src="script.js"></script>
