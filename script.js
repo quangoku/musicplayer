@@ -2,7 +2,7 @@ const AUDIO = document.getElementById("audio");
 const BUTTON = document.getElementById("button");
 var check = 0;
 let current = 1;
-const total = 2;
+const total = 1;
 function play_pause() {
   if (!check) {
     check = 1;
